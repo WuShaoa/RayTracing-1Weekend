@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "README": "markdown",
+        "*.sc": "scheme",
+        "string": "cpp",
+        "cmath": "cpp"
+    }
+}

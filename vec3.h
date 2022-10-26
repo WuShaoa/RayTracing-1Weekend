@@ -63,8 +63,16 @@ inline vec3 operator+(const vec3 &u, const vec3 &v) {
     return vec3(u.e[0] + v.e[0], u.e[1] + v.e[1], u.e[2] + v.e[2]);
 }
 
+inline vec3 operator+(const vec3 &u, const double c) {
+    return vec3(u.e[0] + c, u.e[1] + c, u.e[2] + c);
+}
+
 inline vec3 operator-(const vec3 &u, const vec3 &v) {
     return vec3(u.e[0] - v.e[0], u.e[1] - v.e[1], u.e[2] - v.e[2]);
+}
+
+inline vec3 operator-(const vec3 &u, const double c) {
+    return u + (-c);
 }
 
 inline vec3 operator*(const vec3 &u, const vec3 &v) {

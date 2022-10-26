@@ -7,23 +7,29 @@
 #include "stb_image_write.h"
 
 #include <iostream>
+#include <string>
 
-bool hit_sphere(const point3 &center, double radius, const ray &r)
+double hit_sphere(const point3 &center, double radius, const ray &r)
 {
 	vec3 oc = r.origin() - center; // vec from sphere center, (A - C) in tutorial
-	auto a = dot(r.direction(), r.direction());
-	auto b = 2.0 * dot(oc, r.direction());
-	auto c = dot(oc, oc) - radius * radius;
-	auto discriminant = b * b - 4 * a * c;
-	return (discriminant > 0);
+    auto a = r.direction().length_squared();
+    auto half_b = dot(oc, r.direction());
+    auto c = oc.length_squared() - radius*radius;
+    auto discriminant = half_b*half_b - a*c;
+	return (discriminant >= 0)?
+		(-half_b - sqrt(discriminant) ) / a: -1.0; //return hit time
 }
 
 color ray_color(const ray &r)
 {
-	if (hit_sphere(point3(0, 0, -1), 0.5, r))
-		return color(1, 0, 0);
+	auto s_o = point3(0, 0, -1);
+	auto t = hit_sphere(s_o, 0.5, r);
+	if (t > 0.0){
+		vec3 N = unit_vector(r.at(t) - s_o);
+		return (color(N.x(), N.y(), N.z()) + 1.0) * 0.5; //map normal xyz [-1,1] to color rgb [0,1]
+	}
 	vec3 unit_direction = unit_vector(r.direction());
-	auto t = 0.5 * (unit_direction.y() + 1.0);							// resize t to [0,1]
+	t = 0.5 * (unit_direction.y() + 1.0);							// resize t to [0,1]
 	return (1.0 - t) * color(1.0, 1.0, 1.0) + t * color(0.5, 0.7, 1.0); // lerp, linear interpolation
 }
 
@@ -31,12 +37,12 @@ int main()
 {
 	// Image
 	const auto aspect_ratio = 16.0 / 9.0;
-	const int image_width = 400;
+	const int image_width = 1920;
 	const int image_height = static_cast<int>(image_width / aspect_ratio);
-	char img[image_width * image_width * 3];
-	char *name = "image.png";
+	char* img = (char*) malloc(sizeof(char) * image_width * image_width * 3);
+	std::string name = "image.png";
+	
 	// Camera
-
 	auto viewport_height = 2.0;
 	auto viewport_width = aspect_ratio * viewport_height;
 	auto focal_length = 1.0;
@@ -67,6 +73,6 @@ int main()
 	}
 
 	stbi_flip_vertically_on_write(true); // lower-left as uv-rigin, line scan
-	stbi_write_png(name, image_width, image_height, 3, img, 0);
+	stbi_write_png(name.c_str(), image_width, image_height, 3, img, 0);
 	std::cerr << "\nDone.\n";
 }
