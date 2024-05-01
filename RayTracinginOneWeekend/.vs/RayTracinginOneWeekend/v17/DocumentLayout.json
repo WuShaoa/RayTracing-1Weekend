@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "D:\\dev\\RayTracing-1Weekend\\RayTracinginOneWeekend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\ray.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\hittable.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\heartsphere.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\sphere.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\hittable_list.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\rtweekend.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\vec3.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\src\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{30347093-C6D6-42E1-B769-E6A230272618}|RayTracinginOneWeekend.vcxproj|D:\\dev\\RayTracing-1Weekend\\include\\color.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,59 +34,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "sphere.h",
+              "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\sphere.h",
+              "RelativeDocumentMoniker": "..\\include\\sphere.h",
+              "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\sphere.h",
+              "RelativeToolTip": "..\\include\\sphere.h",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-06T10:53:23.881Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "rtweekend.h",
+              "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\rtweekend.h",
+              "RelativeDocumentMoniker": "..\\include\\rtweekend.h",
+              "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\rtweekend.h",
+              "RelativeToolTip": "..\\include\\rtweekend.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwAYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-07T14:29:13.014Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "hittable_list.h",
+              "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\hittable_list.h",
+              "RelativeDocumentMoniker": "..\\include\\hittable_list.h",
+              "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\hittable_list.h",
+              "RelativeToolTip": "..\\include\\hittable_list.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-07T13:24:35.678Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "hittable.h",
+              "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\hittable.h",
+              "RelativeDocumentMoniker": "..\\include\\hittable.h",
+              "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\hittable.h",
+              "RelativeToolTip": "..\\include\\hittable.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-06T10:47:06.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "vec3.h",
               "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\vec3.h",
               "RelativeDocumentMoniker": "..\\include\\vec3.h",
               "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\vec3.h",
               "RelativeToolTip": "..\\include\\vec3.h",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAAAC8AAAALAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-04T14:13:52.787Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T14:13:52.787Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "color.h",
               "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\color.h",
               "RelativeDocumentMoniker": "..\\include\\color.h",
               "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\color.h",
               "RelativeToolTip": "..\\include\\color.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA/AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-04T14:13:49.471Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-04T14:13:49.471Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ray.h",
-              "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\ray.h",
-              "RelativeDocumentMoniker": "..\\include\\ray.h",
-              "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\ray.h",
-              "RelativeToolTip": "..\\include\\ray.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-04T14:13:45.564Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\src\\main.cpp",
               "RelativeDocumentMoniker": "..\\src\\main.cpp",
               "ToolTip": "D:\\dev\\RayTracing-1Weekend\\src\\main.cpp",
               "RelativeToolTip": "..\\src\\main.cpp",
-              "ViewState": "AQIAADMAAAAAAAAAAAAuwDwAAAAOAAAA",
+              "ViewState": "AQIAALYAAAAAAAAAAAAswLcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-04-04T13:57:24.74Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "heartsphere.h",
+              "DocumentMoniker": "D:\\dev\\RayTracing-1Weekend\\include\\heartsphere.h",
+              "RelativeDocumentMoniker": "..\\include\\heartsphere.h",
+              "ToolTip": "D:\\dev\\RayTracing-1Weekend\\include\\heartsphere.h",
+              "RelativeToolTip": "..\\include\\heartsphere.h",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAcwCAAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-07T14:56:44.837Z"
             }
           ]
         }

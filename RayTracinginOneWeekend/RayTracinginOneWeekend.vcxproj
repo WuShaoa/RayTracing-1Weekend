@@ -148,8 +148,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="..\include\color.h" />
+    <ClInclude Include="..\include\heartsphere.h" />
+    <ClInclude Include="..\include\hittable.h" />
+    <ClInclude Include="..\include\hittable_list.h" />
     <ClInclude Include="..\include\ray.h" />
+    <ClInclude Include="..\include\rtweekend.h" />
+    <ClInclude Include="..\include\sphere.h" />
     <ClInclude Include="..\include\stb_image_write.h" />
+    <ClInclude Include="..\include\tomsolver.hpp" />
     <ClInclude Include="..\include\vec3.h" />
   </ItemGroup>
   <ItemGroup>
